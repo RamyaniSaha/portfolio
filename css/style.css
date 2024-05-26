@@ -644,7 +644,7 @@ main{
     position: absolute;
     content: "";
     width: 2%;
-    left: 21.4em;
+    left: 21.8em;
     height: 6%;
     background: linear-gradient(to right, rgba(184,145,166,1) 0%, rgba(164,51,93,1) 100%); 
     transition: 0.6s ease-in-out;
@@ -652,23 +652,72 @@ main{
 }
 .Project-text:hover::after{
     opacity: 1;
-    width: 15%;
+    width: 15.2%;
     left: 19em;
 }
-
-
 .Project-table{
     position: absolute;
-    width: 80%;
-    left: 6%;
+    width: 94%;
+    left: 4%;
     margin-top: 4%;
 }
-
-.projects-picture img{
-    width: 100%;
-    height: 20vh;
+.projecth{
+    font-size: 16px;
+    font-family: "sora",sans-serif;
+    color: rgb(88, 71, 71);
+    border-bottom: 1px solid black;
+}
+.projectr1{
+    padding: 6% 0 6% 0;
+}
+.projectd1{
+    font-size: 26px;
+    font-family: "sora",sans-serif;
+    color: rgb(88, 71, 71);
+}
+.projectl1 a{
+    font-size: 16px;
+    font-family: "sora",sans-serif;
+    color: rgb(134, 104, 133);
+    text-decoration: none;
+    border-bottom: 1px solid rgb(134, 104, 133);
+    line-height: 10%;
+}
+.projecti1 img{
+    width: 40%;
+    height: 12vh;
     margin-top: 10%;
 }
+.my-contacts{
+    position: relative;
+    margin-top: 64em;
+}
+.contact-text{
+    position: relative;
+    margin-top: 10%;
+  font-size: 30px;
+  font-family: "sora",sans-serif;
+  background: linear-gradient(to right, rgba(184,145,166,1) 0%, rgba(164,51,93,1) 100%); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text;
+  font-weight: 600;
+}
+.contact-text::after{
+    position: absolute;
+    content: "";
+    width: 2%;
+    left: 21.8em;
+    height: 6%;
+    background: linear-gradient(to right, rgba(184,145,166,1) 0%, rgba(164,51,93,1) 100%); 
+    transition: 0.6s ease-in-out;
+    bottom:-20%;
+}
+.contact-text:hover::after{
+    opacity: 1;
+    width: 29%;
+    left: 16em;
+}
+
 
 @keyframes pulsate{
     0%{
