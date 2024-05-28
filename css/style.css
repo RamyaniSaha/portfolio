@@ -3,6 +3,7 @@
 *{
  margin: 0;
  padding: 0;
+ box-sizing: border-box;
 }
 
 main{
@@ -35,6 +36,24 @@ main{
 .logo{
     margin-left: -4%;
 }
+.nav-item{
+    position: relative;
+}
+.nav-item::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    left: 30%;
+    height: 6%;
+    background: linear-gradient(to right, rgba(184,145,166,1) 0%, rgba(164,51,93,1) 100%); 
+    transition: 0.6s ease-in-out;
+    bottom: 8%;
+}
+.nav-item:hover::after{
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
 .navbar-nav{
     position: relative;
     left: -5em;
@@ -43,10 +62,10 @@ main{
 .nav-link{
     font-family: "sora",sans-serif;
     font-size: 18px;
-    color: rgb(134, 104, 133);
+    color: #743e4b;
 }
 .nav-link:hover{
-    color: #96747c;
+    color: #732538;
 }
 .navbar-toggler{
     position: absolute;
@@ -875,5 +894,147 @@ footer{
         stroke-dashoffset: 100%;
         stroke-dasharray: 100% 0;
         stroke-width: 1; 
+    }
+}
+
+@media(max-width:991px){
+    .navbar-nav{
+        width: 110%;
+        height: auto;
+        background-color: rgb(211, 184, 197);
+        position: relative;
+        left: -3em;
+        padding-left: 6%;
+        right: 0;
+        z-index: 9999;
+    }
+    .fixed .navbar-nav{
+        background: transparent; 
+        padding-left: 2%;
+    }
+    .logotxt{
+        top: 1.8em;
+        left: 2.6em;
+    }
+    .logo{
+       position: relative;
+       left: 18em;
+    }
+    .profile-img{
+      margin-top: 20%;
+    }
+    .cont-links{
+        flex-wrap: wrap;
+    }
+    .links{
+        position: relative;
+        margin-top: 4%;
+        left: -6%;
+    }
+    .edu-s{
+        margin-right: -2%;
+        padding: 4% 6%;
+    }
+    .course-selection{
+        margin-top: 6%;
+    }
+    .edu-s1{
+        margin-right: -2%;
+        padding: 6% 6%;
+    }
+    #skill{
+        margin-top: 92em;
+    }
+    .skill-txt::after{
+        left: 11.2em;
+    }
+    .skill-txt:hover::after{
+        width: 22.5%;
+        left: 9em;
+    }
+    .front-end::after{
+        left: 16.2em;
+    }
+    .front-end:hover::after{
+        width: 29%;
+        left: 12em;
+    }
+    .icon-img2{
+        margin-top: -4.5%;
+        left: 7.6em;
+    }
+    .front-endsec:hover .icon5{
+        margin-right: 0.9em;
+    }
+    .icon-img4{
+        left: 23em;
+        margin-top: -4%;
+    }
+    .icon9{
+        margin-left: 1em;
+    }
+    .front-endsec:hover .icon9{
+        margin-left: 1em;
+        margin-right: 0.1em;
+    }
+    .icon-img5{
+        left: -1em;
+    }
+    .icon-img6{
+        margin-top: 0.4%;
+        left: 14.6em;
+    }
+    .back-endsec:hover .icon5{
+        margin-left: -1.2em;
+        margin-right: 0.7em;
+    }
+    .backend-txt2{
+       margin-left: -2em;
+    }
+    .tool-end::after{
+        left: 16.2em;
+    }
+    .tool-end:hover::after{
+        width: 42%;
+        left: 10em;
+    }
+    .Project-text::after{
+        left: 14.2em;
+    }
+    .Project-text:hover::after{
+        width: 21.2%;
+        left: 11.6em;
+    }
+    #my-contacts{
+        position: relative;
+        margin-top: 52em;
+    }
+    .contact-text::after{
+        left: 14.2em;
+    }
+    .contact-text:hover::after{
+        width: 42%;
+        left: 8.6em;
+    }
+    .contact-c{
+        flex-wrap: wrap;
+    }
+    .contact-s{
+        margin-top: 18em;
+    }
+    .foot-logo{
+        position: relative;
+        padding-left: 22em;
+    }
+    .footlogotxt{
+        top: 2em;
+        left: 17.3em;
+    }
+    .foot-list{
+        margin-top: 2%;
+        left: 22%;
+    }
+    .foot-text2{
+       padding-left: 8%;
     }
 }
