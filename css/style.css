@@ -53,6 +53,23 @@ main{
     top: 2.2em;
     left: 2.6em;
 }
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0;
+    z-index: 9999;
+    background: linear-gradient(42deg, rgba(255,255,255,1) 10%, rgba(152,106,117,1) 100%) !important;
+    transition: 0.6s ease-in-out;
+}
+.fixed .logo{
+    margin-top: 1%;
+}
+.fixed .navbar-nav{
+    margin-top: 6%;
+}
+
 .intro-text svg{
    position: absolute;
    width: 100%;
@@ -819,7 +836,21 @@ footer{
     font-size: 15px;
     color: #664049;
 }
-
+#totop{
+    padding: 8px 14px;
+    border-radius: 50%;
+    background: linear-gradient(42deg, rgba(255,255,255,1) 10%, rgba(152,106,117,1) 100%);
+    color: #743e4b;
+    font-size: 26px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: fixed;
+    right: 28px !important;
+    bottom: 28px;
+    z-index: 9999;
+}
 
 
 @keyframes pulsate{

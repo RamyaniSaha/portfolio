@@ -577,6 +577,39 @@
   </footer>
   <!--footer section ends here-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <button onclick="backToTop()" id="totop"><i class="fa-solid fa-chevron-up"></i></button>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      var num = 100;
+      $(window).bind('scroll', function(){
+        if ($(window).scrollTop() >=num){
+          $('.navbar').addClass('fixed').css('background','linear-gradient(42deg, rgba(255,255,255,1) 10%, rgba(152,106,117,1) 100%);');
+        }else{
+          $('.navbar').removeClass('fixed').css('background-color','transparent');
+        }
+      })
+    })
+  </script>
+ <script>
+  let totop = document.getElementById("totop");
+    window.addEventListener("scroll", () => {
+      if(document.body.scrollTop >100 || document.documentElement.scrollTop >100){
+        totop.style= "display:blck";
+      }else{
+        totop.style= "display:none";
+      }
+    })
+
+    let backToTop = ()=>{
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+ </script>
+
+
+
+
 </body>
 </html>
