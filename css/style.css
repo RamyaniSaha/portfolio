@@ -11,6 +11,7 @@ main{
     height: auto;
 }
 .navbar{
+    width: 100%;
     background: transparent !important;
 }
 #banner::before{
@@ -29,12 +30,15 @@ main{
 }
 .logotxt{
     position: absolute;
-    top: 2.2em;
+    top: 2em;
     left: 5.6em;
     letter-spacing: 0.3em;
 }
 .logo{
-    margin-left: -4%;
+    margin-left: -3.8%;
+}
+.logo-img{
+    width: 12%;
 }
 .nav-item{
     position: relative;
@@ -83,7 +87,7 @@ main{
     transition: 0.6s ease-in-out;
 }
 .fixed .logo{
-    margin-top: 1%;
+    margin-top: 0.8%;
 }
 .fixed .navbar-nav{
     margin-top: 6%;
@@ -150,7 +154,7 @@ main{
 }
 .profile{
     width: 100%;
-    height: 70vh;
+    height: 410px;
     border: 1px solid plum;
     border-radius: 10px;
 }
@@ -899,7 +903,7 @@ footer{
 
 @media(max-width:991px){
     .navbar-nav{
-        width: 110%;
+        width: 112%;
         height: auto;
         background-color: rgb(211, 184, 197);
         position: relative;
@@ -908,17 +912,30 @@ footer{
         right: 0;
         z-index: 9999;
     }
+    .fixed nav{
+        height: 20vh;
+    }
     .fixed .navbar-nav{
         background: transparent; 
         padding-left: 2%;
     }
+    .navbar-toggler{
+        top: 1.4em;
+    }
+    .fixed .navbar-toggler{
+        top: 1.4em;
+    }
     .logotxt{
-        top: 1.8em;
-        left: 2.6em;
+        top: 1.5em;
+        left: 2.5em;
     }
     .logo{
+       width: 70%;
        position: relative;
        left: 18em;
+    }
+    .logo-img{
+        width: 16%;
     }
     .profile-img{
       margin-top: 20%;
@@ -1037,4 +1054,268 @@ footer{
     .foot-text2{
        padding-left: 8%;
     }
+}
+
+@media(max-width:782px){
+
+    .profile-img{
+        margin-top: 10%;
+    }
+    .my-edu{
+        margin-top: 14%;
+    }
+    .skill-txt::after{
+        left: 9.6em;
+    }
+    .skill-txt:hover::after{
+        width: 24.5%;
+        left: 7.6em;
+    }
+    .front-end::after{
+        left: 14.2em;
+    }
+    .front-end:hover::after{
+        width: 32%;
+        left: 10em;
+    }
+    .icon-img2{
+        margin-top: 0.1%;
+        left: 5.1em;
+    }
+    .icon-img4{
+        left: 20.8em;
+    }
+    .icon-img6{
+        margin-top: 0.4%;
+        left: 11em;
+    }
+     .tool-end::after{
+        left: 13.2em;
+    }
+    .tool-end:hover::after{
+        width: 48%;
+        left: 7.8em;
+    }
+    .Project-text::after{
+        left: 12.2em;
+    }
+    .Project-text:hover::after{
+        width: 25.2%;
+        left: 9.6em;
+    }
+    .contact-text::after{
+        left: 12.2em;
+    }
+    .contact-text:hover::after{
+        width: 48%;
+        left: 6.6em;
+    }
+     .footlogotxt{
+        top: 1.7em;
+    }
+}
+@media(max-width:580px){
+    .navbar-nav{
+        margin-top: 2%;
+        left: -1em;
+       
+    }
+    .logotxt{
+       top: 1em;
+        left: 1.9em;
+    }
+    .logo{
+       left: 12em;
+    }
+   .content-box{
+    margin-top: 1%;
+   }
+   .content-about{
+    margin-top: 82%;
+   }
+   .contain-row {
+      position: relative;
+   }
+   .profile-img{
+     position: absolute;
+     top: 30%;
+     left: 10%;
+   }
+   .profile{
+     height: 340px;
+   }
+   .links{
+      margin-left: 8%;
+    }
+   .social{
+     margin-top: -0.4em;
+    }
+    .skill-txt::after{
+        left: 6.6em;
+    }
+    .skill-txt:hover::after{
+        width: 36.5%;
+        left: 4.6em;
+    }
+    .front-end::after{
+        left: 10.2em;
+    }
+    .front-end:hover::after{
+        width: 50%;
+        left: 5.2em;
+    }
+    .front-endsec{
+        padding-left: 28%;
+    }
+    .front-e-s{
+        padding-left: 36%;
+    }
+    .icon2 i{
+        padding: 8% 10%;
+    }
+    .front-endsec:hover .icon2 i{
+        padding: 8% 10%;
+    }
+    .icon i{
+        padding: 8% 10%;
+    }
+    .front-endsec:hover .icon i{
+        padding: 8% 10%;
+    }
+    .front-e-s1{
+        padding-left: 32%;
+    }
+    .front-e-s2{
+        padding-left: 27%;
+    }
+    .front-e-s3{
+        padding-left: 32%;
+    }
+    .front-e-s4{
+        padding-left: 30%;
+    }
+    .front-e-s5{
+        padding-left: 31%;
+    }
+    .icon-img2{
+        left: 9em;
+    }
+    .front-endsec:hover .icon5{
+        margin-right: 7.7em;
+    }
+    .front-e-s6{
+        padding-left: 14%;
+    }
+    .icon6 i{
+        padding: 8% 8%;
+    }
+    .front-endsec:hover .icon6 i{
+        padding: 8% 8%;
+    }
+    .front-e-s7{
+        padding-left: 24%;
+    }
+    .front-e-s9{
+        padding-left: 24%;
+    }
+    .icon-img4{
+        left: 9em;
+        margin-top: .8%;
+    }
+    .front-endsec:hover .icon9{
+        margin-right: 7.6em;
+    }
+    .front-skill1{
+        padding-left: 6%;
+    }
+    .front-skill2{
+        padding-left: 8%;
+    }
+    .front-skill3{
+        padding-left: 4%;
+    }
+    .front-skill4{
+        padding-left: 6%;
+    }
+    .front-skill5{
+        padding-left: 14%;
+    }
+    .front-skill6{
+        padding-left: 12%;
+    }
+    .front-e-s10{
+        padding-left: 16%;
+    }
+    .back-skill1{
+        margin-left: -1%;
+    }
+    .front-e-s11{
+        padding-left: 6%;
+    }
+    .front-e-s12{
+        padding-left: 10%;
+    }
+    .icon-img6{
+        left: 9em;
+    }
+    .back-endsec:hover .icon5{
+        margin-right: 7.6em;
+    }
+    .tool-end::after{
+        left: 10.2em;
+    }
+    .tool-end:hover::after{
+        width: 68%;
+        left: 3.6em;
+    }
+    .front-e-s13{
+        padding-left: 20%;
+    }
+    .front-e-s14{
+        padding-left: 8%;
+    }
+    .back-skill2{
+        margin-left: -2%;
+    }
+    .Project-text::after{
+        left: 8.8em;
+    }
+    .Project-text:hover::after{
+        width: 36.2%;
+        left: 6em;
+    }
+    .Project-table{
+        width: 96%;
+        margin-top: 6%;
+    }
+    .projectd1{
+        font-size: 20px;
+    }
+    .contact-text::after{
+        left:  8.8em;
+    }
+    .contact-text:hover::after{
+        width: 68.2%;
+        left: 3em;
+    }
+    .g-map{
+        width: 390px;
+    }
+    .foot-list{
+        margin-top: 2%;
+        left: 0;
+    }
+    .foot-logoimg{
+        width: 16%;
+    }
+    .foot-logo{
+        padding-left: 14em;
+    }
+    .footlogotxt{
+        left: 12.2em;
+        top: 1.9em;
+    }
+}
+@media(max-width:460px){
+
 }
