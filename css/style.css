@@ -937,8 +937,11 @@ footer{
     .logo-img{
         width: 16%;
     }
+    .contain-row {
+        position: relative;
+     }
     .profile-img{
-      margin-top: 20%;
+      margin-top: -20%;
     }
     .cont-links{
         flex-wrap: wrap;
@@ -1318,4 +1321,245 @@ footer{
 }
 @media(max-width:460px){
 
+    .navbar-toggler{
+        left: 0.6em;
+    }
+    .logotxt{
+        left: 1.9em;
+        top: 1.2em;
+     }
+     .logo{
+        width: 60%;
+        left: 9em;
+     }
+     .logo-img{
+        width: 26%;
+     }
+    .content-about{
+     margin-top: 96%;
+    }
+    .profile-img{
+        top: 34%;
+    }
+    .links{
+        margin-left: 0;
+    }
+    .social{
+        margin-top: -0.1em;
+    }
+    #skill{
+        margin-top: 82em;
+    }
+    .skill-txt::after{
+        left: 5.2em;
+    }
+    .skill-txt:hover::after{
+        width: 44%;
+        left: 3em;
+    }
+    .front-end::after{
+        left: 7.6em;
+    }
+    .front-end:hover::after{
+        width: 62%;
+        left: 3em;
+    }
+    .icon-img2{
+       margin-top: -1.4em;
+        left: 7em;
+    }
+    .front-endsec:hover .icon5{
+        margin-right: 5.7em;
+    }
+    .icon-img4{
+        left: 7.1em;
+        margin-top: -1.4em;
+    }
+    .front-endsec:hover .icon9{
+        margin-right: 5.7em;
+    }
+    .icon-img6{
+        left: 6.8em;
+        margin-top: 0.2em;
+    }
+    .back-endsec:hover .icon5{
+        margin-right: 5.7em;
+    }
+    .tool-end::after{
+        left: 7.8em;
+    }
+    .tool-end:hover::after{
+        width: 88%;
+        left: .8em;
+    }
+    .Project-text::after{
+        left: 6.8em;
+    }
+    .Project-text:hover::after{
+        width: 42.8%;
+        left: 4em;
+    }
+    .contact-text::after{
+        left:  6.8em;
+    }
+    .contact-text:hover::after{
+        width: 88.2%;
+        left: 1em;
+    }
+    .g-map{
+        width: 320px;
+    }
+    .foot-logoimg{
+        width: 20%;
+    }
+    .foot-logo{
+        padding-left: 10em;
+    }
+    .footlogotxt{
+        left: 9.4em;
+    }
+    .foot-list{
+        gap: 4%;
+        left: -1em;
+    }
+    .foot-link{
+       font-size: 16px;
+    }
+}
+@media(max-width:380px){
+    .logotxt{
+        top: 1em;
+    }
+     .logo{
+        width: 58%;
+        left: 7em;
+    }
+    .content-title{
+        font-size: 52px;
+    }
+    .content-about{
+        margin-top: 116%;
+    }
+    .skill-txt::after{
+        left: 4.6em;
+    }
+    .skill-txt:hover::after{
+        width: 46%;
+        left: 2.6em;
+    }
+    .front-end::after{
+        left: 7em;
+    }
+    .front-end:hover::after{
+        width: 66%;
+        left: 2.4em;
+    }
+    .front-endsec:hover .icon5{
+        margin-right: 4.7em;
+    }
+    .icon-img2{
+       margin-top: .1em;
+       left: 6.2em;
+    }
+    .icon-img4{
+        left: 6.4em;
+        margin-top: .1em;
+    }
+    .front-endsec:hover .icon9{
+        margin-right: 4.2em;
+    }
+    .icon-img6{
+        left: 5.8em;
+    }
+    .back-endsec:hover .icon5{
+        margin-right: 5em;
+    }
+    .Project-text::after{
+        left: 6em;
+    }
+    .Project-text:hover::after{
+        width: 50.8%;
+        left: 3em;
+    }
+    .g-map{
+        width: 280px;
+    }
+    .foot-list{
+        gap: 2%;
+        margin-top: 4%;
+        left: -1.8em;
+    }
+    .foot-logo{
+        padding-left: 8em;
+    }
+    .footlogotxt{
+        left: 8em;
+    }
+}
+@media(max-width:330px){
+    .logo-img{
+       width: 32%;
+    }
+    .content-title{
+        font-size: 50px;
+    }
+    .profile-img{
+        margin-top: -6%;
+       left: 1%;
+    }
+    .content-about{
+        width: 98%;
+        margin-top: 156%;
+    }
+    #skill{
+        margin-top: 90em;
+    }
+    .icon-img2{
+      margin-top: .1em;
+      left: 5.4em;
+    }
+    .front-endsec:hover .icon5{
+        margin-right: 3em;
+    }
+    .icon-img4{
+        left: 5.8em;
+        margin-top: .2em;
+    }
+    .front-endsec:hover .icon9{
+        margin-right: 3em;
+    }
+    .icon-img6{
+        margin-top: .1em;
+        left: 4.7em;
+    }
+    .back-endsec:hover .icon5{
+        margin-right: 4em;
+    }
+    .Project-table{
+        left: 2%;
+    }
+    .g-map{
+        width: 240px;
+    }
+    .contact-s{
+        margin-left: -14%;
+    }
+    .contact-box1{
+        column-gap: 4%;
+    }
+    .foot-logo{
+        padding-left: 5em;
+    }
+    .footlogotxt{
+        left: 5.6em;
+    }
+    .foot-list{
+       flex-wrap: wrap;
+    }
+    .footlink{
+        margin-left: 2em;
+    }
+    .footlink1{
+        margin-left: 4em;
+    }
 }
