@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container d-flex justify-content-between">
         <div class="logo">
-            <a class="navbar-brand" href="#"><img class="logo-img" src="./images/letter_p_PNG13.png"  alt=""><h4 class="logotxt">ortfolio</h4></a>
+            <a class="navbar-brand" href="#"><h4 class="logotxt">Ramyani Saha Choudhury</h4></a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,10 +43,16 @@
       </div>
      </nav>
 
+     <div class="dark-mode d-flex me-5 mt-3 justify-content-end">
+       <button id="dark" class="dark me-5">
+          Dark Mode <i class="fa-solid fa-moon ms-2"></i>
+       </button>
+     </div>
+
      <div id="banner">
-         <div class="intro_text">
+         <div class="intro-txt intro_text">
            <svg viewBox="0 0 1320 300">
-              <text x="50%" y="94%" text-anchor="middle" class="animate-stroke">
+              <text x="50%" y="40%" text-anchor="middle" class="animate-stroke">
                 HI
              </text>
            </svg>
@@ -54,14 +61,12 @@
          <div class="container">
            <div class="row contain-row align-item-center">
               <div class="col-lg-7 col-md-7 col-sm-12">
-               <div class="content-box">
+               <div class="content-box mb-3">
                 <span class="content-sub-title">
                   I am Ramyani
                 </span>
                 <h1 class="content-title mt-4">
-                 Web Developer+
-                 <br>
-                 Web Designer
+                 Full Stack Web Developer.
                 </h1>
                 <p class="content-about">
                   I want to start my career from an esteemed company and want to grab any kind of opportunities where I can Showcase my abilities, develop my skills and give my best performance. I will learn and grow as much as possible .
@@ -70,7 +75,7 @@
                <div class="cont-links d-flex">
                   <a href="./pdf/Ramyani Saha Choudhury CV (2).pdf">
                     <button class="cv">
-                      download cv <i class="fa-solid fa-briefcase"></i>
+                      download cv <i class="fa-solid fa-briefcase ms-2"></i>
                    </button>
                   </a>
                   <ul class="links d-flex">
@@ -107,445 +112,428 @@
      </div>
    </main>
    <!--education section starts here-->
-   <section id="edu">
-     <div class="education">
-       <div class="education-title mt-5">
+   <section id="edu" class="hidden">
+       <div class="education-title mt-4">
          <div class="container my-edu">
            <div class="row education-r">
               <div class="col-lg-6 edu-sec">
-               <div class="edu-section">
                  <div class="edu-title">
                    <i class="fa-solid fa-user-graduate"></i>
-                   <h1 class="edu-txt">
+                   <h3 class="edu-txt">
                      My Education
-                   </h1>
+                   </h3>
                  </div>
+               <div class="edu-details">
+                  <div class="detail">
+                    <h6 class="edu-year">
+                      2017
+                    </h6>
+                    <h3 class="edu-name">
+                     Bachelor Of Arts
+                    </h3>
+                    <p class="edu-place">
+                      University Of Calcutta
+                    </p>
+                </div>
                </div>
-               <div class="container">
-                 <div class="row">
-                   <div class="col-lg-8 edu-con mt-5">
-                     <div class="edu-s">
-                      <h6 class="edu-year">
-                        2017
-                      </h6>
-                      <h2 class="edu-name">
-                       Bachelor Of Arts
-                      </h2>
-                      <p class="edu-place">
-                        University Of Calcutta
-                      </p>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-               <div class="container">
-                <div class="row">
-                  <div class="col-lg-8 edu-con mt-3">
-                    <div class="edu-s">
+               <div class="edu-details">
+                 <div class="detail">
                      <h6 class="edu-year">
                        2013
                      </h6>
-                     <h2 class="edu-name">
+                     <h3 class="edu-name">
                        Higher Secondary
-                     </h2>
+                     </h3>
                      <p class="edu-place">
                        WBCHSE
                      </p>
-                    </div>
-                  </div>
-                </div>
+                 </div>
                </div>
-               <div class="container">
-                <div class="row">
-                  <div class="col-lg-8 edu-con mt-3">
-                    <div class="edu-s">
+               <div class="edu-details">
+                 <div class="detail">
                      <h6 class="edu-year">
                        2011
                      </h6>
-                     <h2 class="edu-name">
+                     <h3 class="edu-name">
                        Secondary
-                     </h2>
+                     </h3>
                      <p class="edu-place">
                        WBBSE
                      </p>
-                    </div>
-                  </div>
-                </div>
+                 </div>
                </div>
               </div>
               <div class="col-lg-6 edu-sec">
-                <div class="edu-section course-selection">
                   <div class="edu-title">
                     <i class="fa-solid fa-award"></i>
                     <h1 class="edu-txt">
                       My Courses
                     </h1>
                   </div>
-                </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-8 edu-con mt-5">
-                      <div class="edu-s1">
+                  <div class="edu-details">
+                    <div class="detail1">
                        <h2 class="course-name">
                          Full Stack Web Development
                        </h2>
                        <p class="course-place">
                          W3 WEB SCHOOL
                        </p>
-                      </div>
-                    </div>
                   </div>
                 </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-8 edu-con mt-3">
-                      <div class="edu-s1">
+                <div class="edu-details">
+                  <div class="detail1">
                        <h2 class="course-name">
                          Soft Skill And Advance Excel
                        </h2>
                        <p class="course-place">
                          Anudip Foundation
                        </p>
-                      </div>
-                    </div>
                   </div>
                 </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-8 edu-con mt-3">
-                      <div class="edu-s1">
+                <div class="edu-details">
+                  <div class="detail1">
                        <h2 class="course-name">
                         "O" Level
                        </h2>
                        <p class="course-place">
                         NIELIT DOEACC
                        </p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
            </div>
          </div>
        </div>
-     </div>
    </section>
    <!--education section ends here-->
 
    <!--skill section ends here-->
-   <section id="skill">
+   <section id="skill" class="hidden">
      <div class="skills">
-       <div class="skill-title mt-5">
-         <div class="skills-title">
-           <h1 class="skill-txt">
+       <div class="container skill-title mt-5">
+         <div class="col-lg-12 text-center">
+           <h2 class="skill-txt">
              My Skill
-            </h1>
+            </h2>
          </div>
-         <div class="skill-cat">
-           <div class="skills-title mt-5">
-             <h4 class="front-end"> Front-End Skills</h4>
-           </div>
-          <div class="container front-endcon">
-            <div class="row">
-              <div class="col-md-2 front">
+         <div class="col-lg-12 text-center">
+            <div class="skills-title mt-5">
+              <h4 class="front-end"> Front-End Skills</h4>
+            </div>
+          </div>
+          <div class="front-endcon d-flex d-flex-wrap mt-5">
                 <div class="front-endsec front-e-s">
-                  <div class="icon1">
-                    <i class="fa-solid fa-code"></i>
-                  </div>
-                  <h6 class="frontend-skill">
-                    HTML
-                  </h6>
-                </div>
-              </div>
-              <div class="col-md-2 front">
-                <div class="front-endsec front-e-s1">
                   <div class="icon">
                     <i class="fa-brands fa-html5"></i>
+                    <h6 class="front-skill mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text">Html/Html5</h6>
                   </div>
-                  <h6 class="frontend-skill front-skill1">
-                    HTML5
-                  </h6>
                 </div>
-              </div>
-              <div class="col-md-2 front">
                 <div class="front-endsec front-e-s2">
-                  <div class="icon2">
+                  <div class="icon2 ms-2">
                     <i class="fa-brands fa-css3-alt"></i>
+                    <h6 class="front-skill2 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> Css/Css3</h6>
                   </div>
-                  <h6 class="frontend-skill front-skill2">
-                    Css/Css3
-                  </h6>
                 </div>
-              </div>
-              <div class="col-md-2 front">
                 <div class="front-endsec front-e-s3">
                   <div class="icon3">
                     <i class="fa-brands fa-sass"></i>
+                    <h6 class="front-skill3 mt-3 ms-2" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> Scss</h6>
                   </div>
-                  <h6 class="frontend-skill2">
-                   Sass
-                  </h6>
                 </div>
-              </div>
-              <div class="col-md-3 front">
                 <div class="front-endsec front-e-s4">
                   <div class="icon4">
                     <i class="fa-brands fa-js"></i>
+                    <h6 class="front-skill4 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> JavaScript</h6>
                   </div>
-                  <h6 class="frontend-skill1 front-skill3">
-                   JavaScript
-                  </h6>
                 </div>
-              </div>
-              <div class="col-md-2 front">
                 <div class="front-endsec front-e-s5">
                   <div class="icon5">
-                    <img class="icon-img1" width="38" height="38" src="images/icons8-jquery-50.png" alt="">
+                    <img class="icon-img1" width="50" height="48" src="images/icons8-jquery.svg" alt="">
+                    <h6 class="front-skill5 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> Jquery</h6>
                   </div>
-                  <h6 class="frontend-skill front-skill4">
-                   Jquery
-                  </h6>
-                </div>
-              </div>
-              <div class="col-md-2 front">
+               </div>
                 <div class="front-endsec front-e-s6">
                   <div class="icon6">
                     <i class="fa-brands fa-bootstrap"></i>
+                    <h6 class="front-skill6 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> Bootstrap-V4,v5</h6>
                   </div>
-                  <h6 class="frontend-skill front-skill5">
-                   Bootstrap-V4,v5
-                  </h6>
                 </div>
-              </div>
-              <div class="col-md-2 front">
                 <div class="front-endsec front-e-s7">
                   <div class="icon7">
                     <i class="fa-brands fa-wordpress"></i>
+                    <h6 class="front-skill7 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> Wordpress</h6>
                   </div>
-                  <h6 class="frontend-skill front-skill6">
-                   Wordpress
-                  </h6>
                 </div>
-              </div>
-              <div class="col-md-2 front">
                 <div class="front-endsec">
                   <div class="icon8">
                     <i class="fa-brands fa-elementor"></i>
+                    <h6 class="front-skill8 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> Elementor</h6>
                   </div>
-                  <h6 class="frontend-skill front-skill2">
-                   Elementor
-                  </h6>
                 </div>
-              </div>
-              <div class="col-md-2 front">
                 <div class="front-endsec front-e-s9">
                   <div class="icon9">
-                    <img  class="icon-img3" width="38" height="38" src="images/icons8-woocommerce-48.png" alt="">
+                    <img  class="icon-img3 ms-4" width="50" height="48" src="images/icons8-woocommerce.svg" alt="">
+                    <h6 class="front-skill9 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> WooCommerce</h6>
                   </div>
-                  <h6 class="frontend-skill front-skill4">
-                   WooCommerce
-                  </h6>
+                </div>
+            </div>
+          </div>
+         </div>
+         <div class="container backend-con">
+           <div class="row backend-skill-cat1">
+              <div class="col-lg-6 backend-skills-title text-center mt-5">
+                <div class="back-title">
+                  <h4 class="back-end"> Back-End Skills</h4>
+                </div>
+               <div class="backend-skill-sec d-flex d-flex-wrap mt-5">
+                 <div class="back-endsec front-e-s10">
+                   <div class="back-icon1">
+                     <i class="fa-brands fa-php"></i>
+                     <h6 class="back-skill1 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> Php</h6>
+                   </div>
+                 </div>
+                 <div class="back-endsec front-e-s11">
+                   <div class="back-icon2">
+                     <i class="fa-brands fa-laravel"></i>
+                     <h6 class="back-skill2 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> Laravel</h6>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="col-lg-6 database-skills-title text-center mt-5">
+                <div class="database-title">
+                 <h4 class="database"> Database</h4>
+               </div>
+               <div class="back-endsec front-e-s12">
+                <div class="data-icon">
+                  <img class="icon-img5" width="50" height="48" src="images/icons8-mysql-100.png" alt="">
+                  <h6 class="back-skill3 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text"> MySQL</h6>
+                </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="container tool-skill-cat1">
+          <div class="col-lg-12 text-center mt-3">
+            <div class="skills-title">
+              <h4 class="tool-end"> Tools & Version Control</h4>
+            </div>
+            <div class="tool-icon d-flex mt-5">
+              <div class="back-endsec front-e-s13">
+                <div class="tool-icon1">
+                 <i class="fa-brands fa-git-alt"></i>
+                 <h6 class="back-skill4 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text">Git</h6>
+                </div>
+              </div>
+              <div class="back-endsec front-e-s14">
+                <div class="tool-icon2">
+                 <i class="fa-brands fa-github"></i>
+                 <h6 class="back-skill5 mt-3" data-toggle="tooltip" data-placement="bottom" title="Sample tooltip text">Github</h6>
                 </div>
               </div>
             </div>
           </div>
          </div>
-         <div class="skill-cat1">
-          <div class="skills-title mt-5">
-            <h4 class="front-end"> Back-End Skills</h4>
-          </div>
-         <div class="container back-endcon">
-           <div class="row back-row">
-             <div class="col-md-2 back">
-               <div class="back-endsec front-e-s10">
-                 <div class="back-icon1">
-                  <i class="fa-brands fa-php"></i>
-                 </div>
-                 <h6 class="backend-skill back-skill1">
-                   PHP
-                 </h6>
-               </div>
-             </div>
-             <div class="col-md-2 back">
-               <div class="back-endsec front-e-s11">
-                 <div class="icon">
-                  <i class="fa-brands fa-laravel"></i>
-                 </div>
-                 <h6 class="backend-skill front-skill4">
-                   Laravel
-                 </h6>
-               </div>
-             </div>
-           </div>
-         </div>
-        </div>
-        <div class="skill-cat2">
-          <div class="skills-title mt-5">
-            <h4 class="front-end"> Database</h4>
-          </div>
-         <div class="container backd-endcon">
-           <div class="row back-row">
-             <div class="col-md-2 backd">
-               <div class="back-endsec front-e-s12">
-                 <div class="icon5">
-                   <img class="icon-img5" width="38" height="38" src="images/icons8-mysql-50.png" alt="">
-                 </div>
-                 <h6 class="backend-skill backend-txt2 front-skill2">
-                   MySQL
-                 </h6>
-               </div>
-             </div>
-           </div>
-         </div>
-        </div>
-        <div class="skill-cat1">
-          <div class="skills-title mt-5">
-            <h4 class="tool-end"> Tools & Version Control</h4>
-          </div>
-         <div class="container back-endcon">
-           <div class="row back-row">
-             <div class="col-md-2 back">
-               <div class="back-endsec front-e-s13">
-                 <div class="back-icon1">
-                  <i class="fa-brands fa-git-alt"></i>
-                 </div>
-                 <h6 class="backend-skill back-skill2">
-                   GIT
-                 </h6>
-               </div>
-             </div>
-             <div class="col-md-2 back">
-               <div class="back-endsec front-e-s14">
-                 <div class="icon">
-                  <i class="fa-brands fa-github"></i>
-                 </div>
-                 <h6 class="backend-skill front-skill4">
-                   Github
-                 </h6>
-               </div>
-             </div>
-           </div>
-         </div>
-        </div>
        </div>
      </div>  
    </section>  
    <!--skill section ends here-->
    <!--project section starts here-->
-   <section id="project">
-    <div class="my-projects">
-      <div class="project-title mt-5 text-center">
-        <h1 class="Project-text">My Projects</h1>
+   <section id="project" class="hidden">
+    <div class="container myproject">
+      <div class="col-lg-12 my-projects">
+        <div class="project-title pt-2 text-center">
+         <h1 class="Project-text">My Projects</h1>
+       </div>
+     </div>
+     <div class="row project-content">
+      <div class="col-lg-6 project1 mt-3">
+        <div class="project-picture1">
+          <a href="images/Screenshot (3494).png"><img class="project-pics" src="images/Screenshot (3494).png" alt=""></a>
+        </div>
+        <div class="projectitle1">
+          <h6 class="project-t text-center">
+            Business
+          </h6>
+        </div>
+        <div class="about-project d-flex justify-content-around mt-4">
+          <p class="a-project1">#Html</p>
+          <p class="a-project1">#Css</p>
+          <p class="a-project1">#Javascript</p>
+          <p class="a-project1">#OwlCarousel</p>
+        </div>
+        <div class="project-des text-center">
+          <p class="project-description">This Website is about Consultancy Business.</p>
+        </div>
+        <div class="project-link text-center">
+          <p class="p-link"><a class="plink-redirect" href="https://ramyanisaha.github.io/business/">Click Here</a></p>
+        </div>
       </div>
-      <table class="Project-table mx-auto">
-        <thead>
-          <tr>
-            <th class="projecth" scope="col">Index No.</th>
-            <th class="projecth" scope="col">Project Name</th>
-            <th class="projecth" scope="col">Project Link</th>
-            <th class="projecth" scope="col">Project Picture</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th class="projectr1 ps-4" scope="row">1</th>
-            <td class="projectd1">Business</td>
-            <td class="projectl1"><a href="https://ramyanisaha.github.io/business/">Click Here</a></td>
-            <td class="projecti1"><a href="images/Screenshot (3494).png"><img class="project-picture" src="images/Screenshot (3494).png" alt=""></a></td>
-          </tr>
-          <tr>
-            <th class="projectr1 ps-4" scope="row">2</th>
-            <td class="projectd1">Construction</td>
-            <td class="projectl1"><a href="https://ramyanisaha.github.io/Construction/">Click Here</a></td>
-            <td class="projecti1"><a href="images/Screenshot (3495).png"><img class="project-picture" src="images/Screenshot (3495).png" alt=""></a></td>
-          </tr>
-          <tr>
-            <th class="projectr1 ps-4" scope="row">3</th>
-            <td class="projectd1">Donto</td>
-            <td class="projectl1"><a href="https://ramyanisaha.github.io/donto/">Click Here</a></td>
-            <td class="projecti1"><a href="images/Screenshot (3496).png"><img class="project-picture" src="images/Screenshot (3496).png" alt=""></a></td>
-          </tr>
-          <tr>
-            <th class="projectr1 ps-4" scope="row">4</th>
-            <td class="projectd1">Golf-Pro</td>
-            <td class="projectl1"><a href="https://ramyanisaha.github.io/golf-pro/">Click Here</a></td>
-            <td class="projecti1"><a href="images/Screenshot (3497).png"><img class="project-picture" src="images/Screenshot (3497).png" alt=""></a></td>
-          </tr>
-          <tr>
-            <th class="projectr1 ps-4" scope="row">5</th>
-            <td class="projectd1">Floral-Link</td>
-            <td class="projectl1"><a href="https://ramyanisaha.github.io/floral-link/">Click Here</a></td>
-            <td class="projecti1"><a href="images/Screenshot (3499).png"><img class="project-picture" src="images/Screenshot (3499).png" alt=""></a></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="col-lg-6 project2 mt-3">
+        <div class="project-picture1">
+          <a href="images/Screenshot (3495).png"><img class="project-pics" src="images/Screenshot (3495).png" alt=""></a>
+        </div>
+        <div class="projectitle2">
+          <h6 class="project-t1 text-center">
+            Construction
+          </h6>
+        </div>
+        <div class="about-project d-flex justify-content-around mt-4">
+          <p class="a-project1">#Html</p>
+          <p class="a-project1">#Bootstarp V-5</p>
+          <p class="a-project1">#Css</p>
+          <p class="a-project1">#Javascript</p>
+          <p class="a-project1">#OwlCarousel</p>
+        </div>
+        <div class="project-des text-center">
+          <p class="project-description">This is a Koncrete Construction Website.</p>
+        </div>
+        <div class="project-link text-center">
+          <p class="p-link"><a class="plink-redirect" href="https://ramyanisaha.github.io/Construction/">Click Here</a></p>
+        </div>
+      </div>
+     </div>
+      <div class="row project-content1">
+      <div class="col-lg-6 project3 mt-3">
+        <div class="project-picture1">
+          <a href="images/Screenshot (3496).png"><img class="project-pics" src="images/Screenshot (3496).png" alt=""></a>
+        </div>
+        <div class="projectitle2">
+          <h6 class="project-t text-center">
+            Donto
+          </h6>
+        </div>
+        <div class="about-project d-flex justify-content-around mt-4">
+          <p class="a-project1">#Html</p>
+          <p class="a-project1">#Scss</p>
+          <p class="a-project1">#Css</p>
+          <p class="a-project1">#Jquery</p>
+          <p class="a-project1">#Javascript</p>
+          <p class="a-project1">#OwlCarousel</p>
+        </div>
+        <div class="project-des text-center">
+          <p class="project-description">This is a Dental Clinic Website.</p>
+        </div>
+        <div class="project-link text-center">
+          <p class="p-link"><a class="plink-redirect" href="https://ramyanisaha.github.io/donto/">Click Here</a></p>
+        </div>
+      </div>
+     </div>
+     <div class="row project-content2">
+      <div class="col-lg-6 project4 mt-3">
+        <div class="project-picture1">
+          <a href="images/Screenshot (3497).png"><img class="project-pics" src="images/Screenshot (3497).png" alt=""></a>
+        </div>
+        <div class="projectitle2">
+          <h6 class="project-t text-center">
+            Golf-Pro
+          </h6>
+        </div>
+        <div class="about-project d-flex justify-content-around mt-4">
+          <p class="a-project1">#Html</p>
+          <p class="a-project1">#Bootstrap V-5</p>
+          <p class="a-project1">#Css</p>
+          <p class="a-project1">#Javascript</p>
+        </div>
+        <div class="project-des text-center">
+          <p class="project-description">This Website for Professional Golfers.</p>
+        </div>
+        <div class="project-link text-center">
+          <p class="p-link"><a class="plink-redirect" href="https://ramyanisaha.github.io/golf-pro">Click Here</a></p>
+        </div>
+      </div>
+      <div class="col-lg-6 project5 mt-3">
+        <div class="project-picture1">
+          <a href="images/Screenshot (3499).png"><img class="project-pics" src="images/Screenshot (3499).png" alt=""></a>
+        </div>
+        <div class="projectitle2">
+          <h6 class="project-t1 text-center">
+            Floral-Link
+          </h6>
+        </div>
+        <div class="about-project d-flex justify-content-around mt-4">
+          <p class="a-project1">#Html</p>
+          <p class="a-project1">#Bootstrap V-5</p>
+          <p class="a-project1">#Css</p>
+          <p class="a-project1">#Jquery</p>
+          <p class="a-project1">#Javascript</p>
+          <p class="a-project1">#OwlCarousel</p>
+        </div>
+        <div class="project-des text-center">
+          <p class="project-description">This is a online Flower-Shop Website.</p>
+        </div>
+        <div class="project-link text-center">
+          <p class="p-link"><a class="plink-redirect" href="https://ramyanisaha.github.io/floral-link/">Click Here</a></p>
+        </div>
+      </div>
+     </div>
     </div>
   </section>
   <!--project section ends here-->
   <!--contact section starts here-->
-  <div id="contact-info mt-5 pt-5">
+  <section id="contact-info mt-5 pt-5" class="hidden">
     <div id="my-contacts">
-      <div class="contact-title mt-5 text-center">
+      <div class="contact-title mt-5">
         <h1 class="contact-text">My Contact Information</h1>
       </div>
     </div>
     <div class="contact-c d-flex">
+      <div class="contact-s">
+        <div class="contact-box1 d-flex">
+          <div class="contact-icon">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div class="contact-t">
+            <h6 class="conemail"><a href="mailto:junesaha1995@gmail.com">junesaha1995@gmail.com</a></h6>
+          </div>
+        </div>
+        <div class="contact-box1 d-flex pt-3">
+          <div class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="contact-t">
+            <h6 class="conphn"><a href="tel:+919433844325">9433844325</a></h6>
+          </div>
+        </div>
+        <div class="contact-box1 d-flex pt-3">
+          <div class="contact-icon">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="contact-t">
+            <h6 class="conlinkedin"><a href="https://in.linkedin.com/in/ramyani-saha-b1375814a">linkedin.com/in/ramyanisaha</a></h6>
+          </div>
+        </div>
+        <div class="contact-box1 d-flex pt-3">
+          <div class="contact-icon">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="contact-t">
+            <h6 class="congit"><a href="https://github.com/RamyaniSaha">github.com/RamyaniSaha</a></h6>
+          </div>
+        </div>
+        <div class="contact-box1 d-flex pt-3">
+          <div class="contact-icon1">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="contact-t">
+            <h6 class="conaddress">Hridaypur,Barasat, North 24PGS, KOl-700127.</h6>
+          </div>
+        </div>
+      </div>
       <div class="contact-sec">
         <div class="map">
           <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29443.859428584517!2d88.42727313751749!3d22.71030346611356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f898b3969d5547%3A0x25765c3b45dc9416!2sHridaypur%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1716805179548!5m2!1sen!2sin" width="550" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-    <div class="contact-s">
-      <div class="contact-box1 d-flex">
-        <div class="contact-icon">
-          <i class="fa-regular fa-envelope"></i>
-        </div>
-        <div class="contact-t">
-          <h6 class="conemail"><a href="mailto:junesaha1995@gmail.com">junesaha1995@gmail.com</a></h6>
-        </div>
-      </div>
-      <div class="contact-box1 d-flex pt-3">
-        <div class="contact-icon">
-          <i class="fa-solid fa-phone"></i>
-        </div>
-        <div class="contact-t">
-          <h6 class="conphn"><a href="tel:+919433844325">9433844325</a></h6>
-        </div>
-      </div>
-      <div class="contact-box1 d-flex pt-3">
-        <div class="contact-icon">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </div>
-        <div class="contact-t">
-          <h6 class="conlinkedin"><a href="https://in.linkedin.com/in/ramyani-saha-b1375814a">linkedin.com/in/ramyanisaha</a></h6>
-        </div>
-      </div>
-      <div class="contact-box1 d-flex pt-3">
-        <div class="contact-icon">
-          <i class="fa-brands fa-github"></i>
-        </div>
-        <div class="contact-t">
-          <h6 class="congit"><a href="https://github.com/RamyaniSaha">github.com/RamyaniSaha</a></h6>
-        </div>
-      </div>
-      <div class="contact-box1 d-flex pt-3">
-        <div class="contact-icon1">
-          <i class="fa-solid fa-location-dot"></i>
-        </div>
-        <div class="contact-t">
-          <h6 class="conaddress">Hridaypur,Barasat, North 24PGS, KOl-700127.</h6>
-        </div>
-      </div>
     </div>
-    </div>
-  </div>
+  </section>
   <!--contact section ends here-->
   <!--footer section starts here-->
   <footer>
     <div class="foot-sec">
       <div class="foot-sec1">
         <div class="foot-logo pt-4">
-          <a class="foot-brand" href="#"><img class="foot-logoimg" src="./images/letter_p_PNG13.png" width="12%" alt=""><h4 class="footlogotxt">ortfolio</h4></a>
+          <a class="foot-brand" style="text-decoration: none;" href="#"><h4 class="footlogotxt text-center">Ramyani Saha Choudhury</h4></a>
         </div>
         <div class="foot-nav d-flex">
           <ul class="foot-list">
@@ -587,6 +575,7 @@
           $('.navbar').removeClass('fixed').css('background-color','transparent');
         }
       })
+ 
     })
   </script>
  <script>
@@ -604,9 +593,11 @@
       document.documentElement.scrollTop = 0;
     }
  </script>
-
-
-
-
+ <script>
+  $("#dark").click(function () {
+    $(document.body).toggleClass("darked")
+  })
+ </script>
+  <script src="index.js"></script>
 </body>
 </html>
