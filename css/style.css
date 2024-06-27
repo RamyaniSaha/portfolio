@@ -491,10 +491,6 @@ body{
     position: relative;
     left: 0.1em;
 }
-.icon-img3{
-    position: relative;
-    left: 0.1em;
-}
 .icon2 i{
     font-size: 38px;
     margin-left: 0.3em;
@@ -1189,99 +1185,6 @@ section,.hidden{
         left: 4.6em;
     }
 }
-@media only screen
-and (max-width:1040px)
-{
-    .logo{
-        margin-left: 5.6%;
-        margin-top: 1em;
-    }
-    .fixed .logo{
-        margin-top: 1.4em;
-    }
-    .logotxt{
-        top: 1.8em;
-        left: 5.8em;
-    }
-    .content-box{
-        position: relative;
-    }
-    .profile-img{
-        top: 18%;
-    }
-    .skill-txt::after{
-        left: 12.6em;
-    }
-    .skill-txt:hover::after{
-        width: 25%;
-        left: 10em;
-    }
-    .front-end::after{
-        left: 18.2em;
-    }
-    .front-end:hover::after{
-        width: 29%;
-        left: 14em;
-    }
-    .icon-img2{
-        margin-top: .4%;
-        left: 6.4em;
-    }
-    .icon-img4{
-        left: 26.6em;
-        margin-top: -.6%;
-    }
-    .front-endsec:hover .icon5{
-        padding: 8% 10%;
-        margin-right: 1.4em;
-    }
-    .front-endsec:hover .icon9{
-        padding: 8% 10%;
-        margin-right:1em;
-    }
-    .icon-img6{
-        margin-top: -.2%;
-        left: 15.6em;
-    }
-    .back-endsec:hover .icon5{
-        padding: 10% 10%;
-        margin-right: .2em;
-    }
-    .tool-end::after{
-        left: 18.2em;
-    }
-    .tool-end:hover::after{
-        width: 42%;
-        left: 12em;
-    }
-    .Project-text::after{
-        left: 16.2em;
-    }
-    .Project-text:hover::after{
-        width: 21.2%;
-        left: 13.4em;
-    }
-    .contact-text::after{
-        left: 16.2em;
-    }
-    .contact-text:hover::after{
-        width: 42%;
-        left: 19.6em;
-    }
-    #my-contacts{
-        margin-top: 78em !important;
-    }
-    .contact-c{
-        margin: 8% 8%;
-    }
-    .foot-logo{
-        padding-left: 30em;
-    }
-    .footlogotxt{
-        top: 2em;
-        left: 22.8em;
-    }
-}
 @media only screen and (max-width:991px){
     .navbar-nav{
         width: 112%;
@@ -1293,36 +1196,27 @@ and (max-width:1040px)
         right: 0;
         z-index: 9999;
     }
-    .fixed nav{
-        height: 20vh;
-    }
     .fixed .navbar-nav{
         background: transparent; 
         padding-left: 2%;
     }
     .navbar-toggler{
-        top: 1.4em;
+        top: .8em;
     }
     .fixed .navbar-toggler{
-        top: 1.4em;
+        top: .8em;
     }
     .logotxt{
-        top: 1.2em;
-        left: 2em;
-    }
-    .logo{
-       width: 60%;
-       position: relative;
-       left: 18em;
-    }
-    .logo-img{
-        width: 16%;
+        top: 1em;
     }
     .contain-row {
         position: relative;
      }
     .profile-img{
-      margin-top: -20%;
+      margin-top: -1%;
+    }
+    .profile{
+        width: 120%;
     }
     .cont-links{
         flex-wrap: wrap;
@@ -1343,81 +1237,84 @@ and (max-width:1040px)
         margin-right: -2%;
         padding: 6% 6%;
     }
+    .course-title{
+        margin-top: 4%;
+    }
     #skill{
-        margin-top: 92em;
+        margin-top: 8%;
     }
     .skill-txt::after{
-        left: 11.2em;
+        left: 8.8em;
     }
     .skill-txt:hover::after{
-        width: 22.5%;
-        left: 9em;
+        width: 42.5%;
+        left: 5.4em;
     }
     .front-end::after{
-        left: 16.2em;
+        left: 13.2em;
     }
     .front-end:hover::after{
-        width: 29%;
-        left: 12em;
+        width: 42%;
+        left: 8em;
     }
-    .front-endsec:hover .icon5{
-        margin-right: 0.6em;
+    .front-endcon{
+        margin-left: 6%;
+        flex-wrap: wrap;
     }
-    .icon9{
-        margin-left: 1em;
+    .back-title::after{
+        left: 13.2em;
     }
-    .front-endsec:hover .icon9{
-        margin-left: 1em;
-        margin-right: -0.1em;
+    .back-title:hover::after{
+        width: 40%;
+        left: 8em;
     }
-    .icon-img5{
-        margin-left: -1em;
+    .database::after{
+        left: 13em;
     }
-    .back-endsec:hover .icon5{
-        margin-left: -1.2em;
-       padding-left: 1.2em;
-    }
-    .backend-txt2{
-       margin-left: -2em;
-    }
+    .database:hover::after{
+        left: 9.2em;
+    } 
     .tool-end::after{
-        left: 16.2em;
+        left: 13.2em;
     }
     .tool-end:hover::after{
-        width: 42%;
-        left: 10em;
+        width: 62%;
+        left: 5.2em;
     }
     .Project-text::after{
-        left: 14.2em;
+        left: 11.2em;
     }
     .Project-text:hover::after{
-        width: 21.2%;
-        left: 11.6em;
+        width: 26.2%;
+        left: 8.6em;
+    }
+    .project3{
+        margin-left: 0;
     }
     #my-contacts{
         position: relative;
-        margin-top: 52em !important;
+        margin-top: 2em;
     }
     .contact-text::after{
         left: 14.2em;
     }
     .contact-text:hover::after{
-        width: 42%;
+        width: 44%;
         left: 8.6em;
     }
     .contact-c{
         flex-wrap: wrap;
     }
     .contact-s{
-        margin-top: 18em;
+        margin-top: 0;
+        margin-bottom: 6%;
+    }
+    .contact-sec{
+        margin-bottom: 16em;
     }
     .foot-logo{
         position: relative;
-        padding-left: 22em;
-    }
-    .footlogotxt{
-        top: 2em;
-        left: 17.3em;
+        padding-left: 2em;
     }
     .foot-list{
         margin-top: 2%;
@@ -1427,11 +1324,6 @@ and (max-width:1040px)
        padding-left: 8%;
     }
 }
-@media only screen and (max-width:921px){
-    #my-contacts{
-        margin-top: 78em !important;
-    }
-}
 @media only screen and (max-width:782px){
 
     .profile-img{
@@ -1439,34 +1331,6 @@ and (max-width:1040px)
     }
     .my-edu{
         margin-top: 14%;
-    }
-    .skill-txt::after{
-        left: 9.6em;
-    }
-    .skill-txt:hover::after{
-        width: 24.5%;
-        left: 7.6em;
-    }
-    .front-end::after{
-        left: 14.2em;
-    }
-    .front-end:hover::after{
-        width: 32%;
-        left: 10em;
-    }
-     .tool-end::after{
-        left: 13.2em;
-    }
-    .tool-end:hover::after{
-        width: 48%;
-        left: 7.8em;
-    }
-    .Project-text::after{
-        left: 12.2em;
-    }
-    .Project-text:hover::after{
-        width: 25.2%;
-        left: 9.6em;
     }
     .contact-text::after{
         left: 12.2em;
@@ -1480,34 +1344,36 @@ and (max-width:1040px)
     }
 }
 @media only screen and (max-width:580px){
+    .navbar-toggler{
+        left: 0.6em;
+    }
     .navbar-nav{
         margin-top: 2%;
         left: -1em;
-       
     }
     .logotxt{
        top: 1em;
-        left: 1.9em;
-    }
-    .logo{
-       left: 12em;
+        left: 5.8em;
     }
    .content-box{
     margin-top: 1%;
    }
-   .content-about{
-    margin-top: 82%;
-   }
    .contain-row {
       position: relative;
    }
-   .profile-img{
-     position: absolute;
-     top: 30%;
-     left: 10%;
+   .intro{
+    display: flex;
+    flex-wrap: wrap-reverse;
+   }
+   .introduction-column {
+      margin-top: 16%;
+   }
+   .profile-pic{
+     margin-top: 10%;
    }
    .profile{
-     height: 340px;
+    width: 94%;
+     height: 460px;
    }
    .links{
       margin-left: 8%;
@@ -1529,108 +1395,29 @@ and (max-width:1040px)
         width: 50%;
         left: 5.2em;
     }
-    .front-endsec{
-        padding-left: 28%;
+    .back-title::after{
+        left: 10.2em;
     }
-    .front-e-s{
-        padding-left: 36%;
+    .back-title:hover::after{
+        width: 50%;
+        left: 5.2em;
     }
-    .icon2 i{
-        padding: 8% 10%;
+    .database::after{
+        left: 10.2em;
     }
-    .front-endsec:hover .icon2 i{
-        padding: 8% 10%;
+    .database:hover::after{
+        width: 50%;
+        left: 5.2em;
     }
-    .icon i{
-        padding: 8% 10%;
-    }
-    .front-endsec:hover .icon i{
-        padding: 8% 10%;
-    }
-    .front-e-s1{
-        padding-left: 32%;
-    }
-    .front-e-s2{
-        padding-left: 27%;
-    }
-    .front-e-s3{
-        padding-left: 32%;
-    }
-    .front-e-s4{
-        padding-left: 30%;
-    }
-    .front-e-s5{
-        padding-left: 31%;
-    }
-    .front-endsec:hover .icon5{
-        margin-right: 7.7em;
-    }
-    .front-e-s6{
-        padding-left: 14%;
-    }
-    .icon6 i{
-        padding: 8% 8%;
-    }
-    .front-endsec:hover .icon6 i{
-        padding: 8% 8%;
-    }
-    .front-e-s7{
-        padding-left: 24%;
-    }
-    .front-e-s9{
-        padding-left: 24%;
-    }
-    .front-endsec:hover .icon9{
-        margin-right: 7.6em;
-    }
-    .front-skill1{
-        padding-left: 6%;
-    }
-    .front-skill2{
-        padding-left: 8%;
-    }
-    .front-skill3{
-        padding-left: 4%;
-    }
-    .front-skill4{
-        padding-left: 6%;
-    }
-    .front-skill5{
-        padding-left: 14%;
-    }
-    .front-skill6{
-        padding-left: 12%;
-    }
-    .front-e-s10{
-        padding-left: 16%;
-    }
-    .back-skill1{
-        margin-left: -1%;
-    }
-    .front-e-s11{
-        padding-left: 6%;
-    }
-    .front-e-s12{
-        padding-left: 10%;
-    }
-    .back-endsec:hover .icon5{
-        margin-right: 7.6em;
+    .front-endcon{
+       flex-wrap: wrap;
     }
     .tool-end::after{
         left: 10.2em;
     }
     .tool-end:hover::after{
-        width: 68%;
+        width: 70%;
         left: 3.6em;
-    }
-    .front-e-s13{
-        padding-left: 20%;
-    }
-    .front-e-s14{
-        padding-left: 8%;
-    }
-    .back-skill2{
-        margin-left: -2%;
     }
     .Project-text::after{
         left: 8.8em;
@@ -1638,13 +1425,6 @@ and (max-width:1040px)
     .Project-text:hover::after{
         width: 36.2%;
         left: 6em;
-    }
-    .Project-table{
-        width: 96%;
-        margin-top: 6%;
-    }
-    .projectd1{
-        font-size: 20px;
     }
     .contact-text::after{
         left:  8.8em;
@@ -1654,21 +1434,14 @@ and (max-width:1040px)
         left: 3em;
     }
     .g-map{
-        width: 390px;
+        width: 400px;
     }
     .foot-list{
         margin-top: 2%;
         left: 0;
     }
-    .foot-logoimg{
-        width: 16%;
-    }
     .foot-logo{
-        padding-left: 14em;
-    }
-    .footlogotxt{
-        left: 12.2em;
-        top: 1.9em;
+        padding-left: 1em;
     }
 }
 
@@ -1679,30 +1452,14 @@ and (max-width:460px) {
         left: 0.6em;
     }
     .logotxt{
-        left: 1.9em;
-        top: 1.2em;
+        left: 4.8em;
+        font-size: 17px;
      }
-     .logo{
-        width: 60%;
-        left: 9em;
-     }
-     .logo-img{
-        width: 26%;
-     }
-    .content-about{
-     margin-top: 96%;
-    }
-    .profile-img{
-        top: 34%;
-    }
     .links{
         margin-left: 0;
     }
     .social{
         margin-top: -0.1em;
-    }
-    #skill{
-        margin-top: 82em;
     }
     .skill-txt::after{
         left: 5.2em;
@@ -1718,16 +1475,23 @@ and (max-width:460px) {
         width: 62%;
         left: 3em;
     }
-    .front-endsec:hover .icon5{
-        margin-right: 5em;
+    .back-title::after{
+        left: 7.6em;
     }
-    .front-endsec:hover .icon9{
-        margin-right: 5em;
+    .back-title:hover::after{
+        width: 62%;
+        left: 3em;
     }
-    .back-endsec:hover .icon5{
-      
-        margin-right: 5.7em;
+    .database::after{
+        left: 7.6em;
     }
+    .database:hover::after{
+        width: 62%;
+        left: 3em;
+    }
+    .back-skill3{
+        margin: 0 8.8em;
+     }
     .tool-end::after{
         left: 7.8em;
     }
@@ -1752,14 +1516,9 @@ and (max-width:460px) {
     .g-map{
         width: 320px;
     }
-    .foot-logoimg{
-        width: 20%;
-    }
-    .foot-logo{
-        padding-left: 10em;
-    }
+   
     .footlogotxt{
-        left: 9.4em;
+        left: .4em;
     }
     .foot-list{
         gap: 4%;
@@ -1772,51 +1531,62 @@ and (max-width:460px) {
 @media only screen
 and (max-width:394px){
     .logotxt{
-        top: 1em;
-    }
-    .logo-img{
-        width: 24%;
-    }
-     .logo{
-        width: 58%;
-        left: 7em;
-    }
+        left: 4.7em;
+        font-size: 16px;
+     }
+    
     .content-title{
         font-size: 52px;
     }
-    .content-about{
-        margin-top: 128%;
+    .links{
+        top: 1em;
+        left: -2.8em;
     }
     .skill-txt::after{
         left: 4.6em;
     }
     .skill-txt:hover::after{
-        width: 46%;
-        left: 2.6em;
+        width: 100%;
+        left: .1em;
     }
     .front-end::after{
         left: 7em;
     }
     .front-end:hover::after{
-        width: 66%;
-        left: 2.4em;
+        width: 100%;
+        left: .1em;
     }
-    .front-endsec:hover .icon5{
-        margin-right: 4.7em;
+    .back-title::after{
+        left: 6.8em;
     }
-    .front-endsec:hover .icon9{
-        margin-right: 4.2em;
+   .back-title:hover::after{
+        width: 100%;
+        left: .1em;
     }
-    .back-endsec:hover .icon5{
-        margin-right: 5em;
+    .database::after{
+        left: 6.8em;
+    }
+   .database:hover::after{
+        width: 100%;
+        left: .1em;
+    }
+    .tool-end::after{
+        left: 6.8em;
+    }
+   .tool-end:hover::after{
+        width: 100%;
+        left: .1em;
     }
     .Project-text::after{
         left: 6em;
     }
     .Project-text:hover::after{
-        width: 50.8%;
+        width: 50.9%;
         left: 3em;
     }
+   .about-project{
+    flex-wrap: wrap;
+   }
     .g-map{
         width: 280px;
     }
@@ -1826,44 +1596,46 @@ and (max-width:394px){
         left: -1em;
         flex-wrap: wrap;
     }
-    .foot-logo{
-        padding-left: 7em;
-    }
     .footlogotxt{
         margin-top: -.3em;
-        left: 7em;
+       
     }
 }
 @media only screen and (min-width:320px)
 and (max-width:366px){
-    .logo-img{
-       width: 32%;
-    }
-    .content-title{
-        font-size: 50px;
-    }
+    
     .profile-img{
         margin-top: -6%;
        left: 1%;
     }
-    .content-about{
-        width: 98%;
-        margin-top: 156%;
+    .skill-txt::after{
+        left: 4em;
     }
-    #skill{
-        margin-top: 90em;
+    .front-end::after{
+        left: 5.8em;
     }
-    .front-endsec:hover .icon5{
-        margin-right: 3em;
+    .back-title::after{
+        left: 5.8em;
     }
-    .front-endsec:hover .icon9{
-        margin-right: 3em;
+    .database::after{
+        left: 5.8em;
     }
-    .back-endsec:hover .icon5{
-        margin-right: 4em;
+    .tool-end::after{
+        left: 5.8em;
     }
-    .Project-table{
-        left: 2%;
+    .Project-text::after{
+        left: 5em;
+    }
+    .Project-text:hover::after{
+        width: 100%;
+        left: .1em;
+    }
+    .contact-text::after{
+        left: 5em;
+    }
+    .contact-text:hover::after{
+        width: 100%;
+        left: .1em;
     }
     .g-map{
         width: 240px;
@@ -1873,15 +1645,6 @@ and (max-width:366px){
     }
     .contact-box1{
         column-gap: 4%;
-    }
-    .foot-logoimg{
-        width: 22%;
-     }
-    .foot-logo{
-        padding-left: 5em;
-    }
-    .footlogotxt{
-        left: 5.6em;
     }
     .foot-list{
        flex-wrap: wrap;
