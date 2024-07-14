@@ -1184,6 +1184,20 @@ section,.hidden{
     .logotxt{
         left: 4.6em;
     }
+    .project-t::after{
+        left: 8em;
+    }
+    .project-t:hover::after{
+        width: 30%;
+        left: 6em;
+    }
+    .project-t1::after{
+        left: 8em;
+    }
+    .project-t1:hover::after{
+        width: 30%;
+        left: 6em;
+    }
 }
 @media only screen and (max-width:991px){
     .navbar-nav{
@@ -1287,6 +1301,20 @@ section,.hidden{
     .Project-text:hover::after{
         width: 26.2%;
         left: 8.6em;
+    }
+    .project-t::after{
+        left: 7em;
+    }
+    .project-t:hover::after{
+        width: 60%;
+        left: 6em;
+    }
+    .project-t1::after{
+        left: 7em;
+    }
+    .project-t1:hover::after{
+        width: 60%;
+        left: 6em;
     }
     .project3{
         margin-left: 0;
@@ -1462,18 +1490,18 @@ and (max-width:460px) {
         margin-top: -0.1em;
     }
     .skill-txt::after{
-        left: 5.2em;
+        left: 5em;
     }
     .skill-txt:hover::after{
-        width: 44%;
-        left: 3em;
+        width: 50%;
+        left: 2.6em;
     }
     .front-end::after{
         left: 7.6em;
     }
     .front-end:hover::after{
-        width: 62%;
-        left: 3em;
+        width: 66%;
+        left: 2.8em;
     }
     .back-title::after{
         left: 7.6em;
@@ -1496,18 +1524,35 @@ and (max-width:460px) {
         left: 7.8em;
     }
     .tool-end:hover::after{
-        width: 88%;
-        left: .8em;
+        width: 100%;
+        left: .1em;
+    }
+    .about-project{
+        flex-wrap: wrap;
     }
     .Project-text::after{
-        left: 6.8em;
+        left: 6em;
     }
     .Project-text:hover::after{
-        width: 42.8%;
-        left: 4em;
+        width: 64%;
+        left: 2.6em;
+    }
+    .project-t::after{
+        left: 5em;
+    }
+    .project-t:hover::after{
+        width: 60%;
+        left: 3em;
+    }
+    .project-t1::after{
+        left: 5em;
+    }
+    .project-t1:hover::after{
+        width: 60%;
+        left: 3em;
     }
     .contact-text::after{
-        left:  6.8em;
+        left:  6em;
     }
     .contact-text:hover::after{
         width: 88.2%;
@@ -1518,11 +1563,11 @@ and (max-width:460px) {
     }
    
     .footlogotxt{
-        left: .4em;
+        left: .1em;
     }
     .foot-list{
         gap: 4%;
-        left: -1em;
+        left: -0.4em;
     }
     .foot-link{
        font-size: 16px;
@@ -1584,6 +1629,20 @@ and (max-width:394px){
         width: 50.9%;
         left: 3em;
     }
+    .project-t::after{
+        left: 5em;
+    }
+    .project-t:hover::after{
+        width: 60%;
+        left: 3em;
+    }
+    .project-t1::after{
+        left: 5em;
+    }
+    .project-t1:hover::after{
+        width: 60%;
+        left: 3em;
+    }
    .about-project{
     flex-wrap: wrap;
    }
@@ -1593,7 +1652,7 @@ and (max-width:394px){
     .foot-list{
         gap: 2%;
         margin-top: 4%;
-        left: -1em;
+        left: -.4em;
         flex-wrap: wrap;
     }
     .footlogotxt{
@@ -1629,6 +1688,19 @@ and (max-width:366px){
     .Project-text:hover::after{
         width: 100%;
         left: .1em;
+    }
+    .project-t::after{
+        left: 4em;
+    }
+    .project-t:hover::after{
+        left: 2em;
+    }
+    .project-t1::after{
+        left: 4em;
+    }
+    .project-t1:hover::after{
+        width: 66%;
+        left: 2em;
     }
     .contact-text::after{
         left: 5em;
