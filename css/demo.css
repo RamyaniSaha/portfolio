@@ -1,0 +1,120 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+/* SECTION */
+#edu {
+  padding: 80px 0;
+  background: #0f172a; /* dark professional bg */
+  color: #fff;
+}
+
+/* TITLE */
+.edu-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.edu-title i {
+  font-size: 24px;
+  color: #38bdf8;
+}
+
+.edu-txt {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* TIMELINE LEFT SIDE */
+.edu-sec {
+  position: relative;
+  padding-left: 40px;
+}
+
+/* vertical line */
+.edu-sec::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #334155;
+}
+
+/* timeline item */
+.edu-details {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* dot */
+.timeline-dot {
+  position: absolute;
+  left: -32px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: #38bdf8;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+/* card look */
+.detail {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* hover */
+.detail:hover {
+  transform: translateY(-5px);
+  background: #334155;
+}
+
+/* text */
+.edu-year {
+  color: #38bdf8;
+}
+
+.edu-name {
+  margin: 5px 0;
+}
+
+.edu-place {
+  color: #94a3b8;
+}
+
+/* RIGHT SIDE COURSES */
+.course-sec .edu-details {
+  margin-bottom: 25px;
+}
+
+.detail1 {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.detail1:hover {
+  transform: scale(1.03);
+  background: #334155;
+}
+
+/* hidden animation state */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
