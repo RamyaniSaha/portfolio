@@ -58,6 +58,10 @@ body{
 .darked .fixed:hover{
     background: linear-gradient(0deg, #f6d6c9 20%, #f6f1f5 120%) !important;
 }
+.darked .fixed .navbar-toggler{
+    border: 1.6px solid #0b3a52;
+    color: #0b3a52 !important;
+}
 .darked .fixed .nav-link{
     color: #0b3a53;
 }
@@ -85,17 +89,17 @@ body{
 .darked .content-sub-title{
     color: #f6f1f5;
 }
-.darked .content-title, .darked .edu-txt, .darked .skill-txt, .darked .Project-text, .darked .contact-text{
+.darked .content-title, .darked .edu-txt, .darked .skill-txt, .darked .Project-text, .darked .contact-text, .darked .exp-txt{
     background: linear-gradient(176deg, rgb(180, 142, 173) 0%, #e5d7e5 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     line-height: 1.2;
     margin-bottom: 16px;
 }
-.darked .edu-txt::after, .darked .skill-txt::after, .darked .Project-text::after, .darked .contact-text::after{
+.darked .edu-txt::after, .darked .skill-txt::after, .darked .Project-text::after, .darked .contact-text::after, .darked .exp-txt::after{
     background: linear-gradient(176deg, rgb(180, 142, 173) 0%, #e5d7e5 100%);
 }
-.darked .content-about{
+.darked .content-about, .darked .content-about1, .darked .content-about2{
     color: white;
 }
 .darked #project, .darked .education-title{
@@ -159,10 +163,10 @@ body{
 .darked .education-r::before{
     background: linear-gradient(180deg, #b46ead, #f6d6c9, #b46ead);
 }
-.darked .front-end, .darked .back-end{
+.darked .front-end, .darked .back-end, .darked .exp-txt1{
     color: #e5d7d9;
 }
-.darked .front-end::after, .darked .tool-end::after{
+.darked .front-end::after, .darked .tool-end::after, .darked .exp-txt1::after{
     background: #e5d7d9;
 }
 .darked .back-title::after{
@@ -179,6 +183,9 @@ body{
 }
 .darked .owl-item.center .skill-card:hover, .darked .backskill-card:hover{
     background: linear-gradient(45deg, #e5d7d9 60%, #f6d6c9 100%) !important;
+}
+.darked .exp-para, .darked .exp-para1, .darked .exp-para2{
+    color: white;
 }
 .darked .project-t, .darked .project-t1{
     color: #f6d6c9;
@@ -367,7 +374,7 @@ body{
    fill: transparent;
    font-size: 240px;
    display: inline-block;
-   animation: pulse 6s linear infinite alternate , stroke 4s linear !important;
+   animation: pulse1 6s linear infinite alternate , stroke 4s linear !important;
    opacity: 0.2;
 } 
 
@@ -390,20 +397,18 @@ body{
     line-height: 1.2;
     margin-bottom: 16px;
 }
-.content-about{
-    max-width: 550px;
+.content-about, .content-about1, .content-about2{
+   max-width: 580px;
    width: 100%;
    font-size: 20px;
+   text-align: justify;
    font-family: "sora",sans-serif;
    font-weight: 300;
    color: #140C1C;
 }
-
-
-.profile-img{
-    position: relative;
-    top: 1em;
-    
+.profile-pic{
+    display: block;
+    margin: auto;
 }
 .profile{
     width: 100%;
@@ -565,8 +570,7 @@ body{
     align-content: center;
     border-radius: 8px;
     border: 1px solid rgba(255,255,255,0.1);
-    opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(0px);
     transition: all 0.6s ease-in;
 }
 .detail::before{
@@ -653,13 +657,18 @@ body{
     color: #071a2a;
 }
 
+#experience{
+ margin-top: 2%;
+ text-align: center;
+}
+
 #skill{
     margin-top: 6%;
 }
 .skills-title{
     text-align: center;
 }
-.skill-txt{
+.skill-txt, .exp-txt{
     display:inline-block;
     cursor: pointer;
     position: relative;
@@ -671,7 +680,7 @@ body{
     -webkit-background-clip: text;
     font-weight: 600; 
 }
-.skill-txt::after{
+.skill-txt::after, .exp-txt::after{
     position: absolute;
     content: "";
     left: 50%;
@@ -683,10 +692,10 @@ body{
     transform-origin: center;
     transition: 0.6s ease-in-out;
 }
-.skill-txt:hover::after{
+.skill-txt:hover::after, .exp-txt:hover::after{
     width: 100%;
 }
-.front-end{
+.front-end, .exp-txt1{
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -696,7 +705,7 @@ body{
     color: rgb(7, 26, 42); 
     font-weight: 500; 
 }
-.front-end::after{
+.front-end::after, .exp-txt1::after{
     position: absolute;
     content: "";
     left: 50%;
@@ -707,7 +716,7 @@ body{
     transform: translateX(-50%);
     transition: 0.6s ease-in-out;
 }
-.front-end:hover::after{
+.front-end:hover::after, .exp-txt1:hover::after{
     opacity: 1;
     width: 100%;
 }
@@ -797,7 +806,7 @@ body{
 /* TEXT */
 .skill-card h6, .backskill-card h6{
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "sora", sans-serif;
     font-weight: 500;
     color: #0b3a53;
@@ -934,6 +943,9 @@ body{
     margin: auto;
     margin-bottom: 2px;
 }
+.icon-img6{
+    margin-bottom: 15px !important;
+}
 
 .tool-end{
     display: inline-block;
@@ -968,6 +980,42 @@ body{
 }
 .backskill-card .fa-github{
     color: #7b61f8;
+}
+.exp-para, .exp-para1{
+   font-size: 20px;
+   font-family: "sora",sans-serif;
+   font-weight: 300;
+   color: #140C1C;
+}
+.exp-para1{
+    margin-top: 2%;
+}
+.exp-list{
+    display: flex;
+    justify-content: center;
+    gap: 0.6em;
+    margin-top: 2%;
+}
+.career-text{
+   font-family: "sora",sans-serif;
+   text-align: center;
+   margin: auto;
+   place-items: center !important;
+   font-weight: 500;
+   color: #140C1C;
+   font-size: 14px;
+}
+#career{
+    margin-top: 4%;
+    text-align: center;
+}
+.exp-para2{
+    width: 90%;
+   font-size: 20px;
+   font-family: "sora",sans-serif;
+   font-weight: 300;
+   color: #140C1C;
+   margin: auto;
 }
 
 #project{
@@ -1388,7 +1436,7 @@ footer{
     box-shadow: 2px 2px 2px black;
 }
 
-@keyframes pulse{
+@keyframes pulse1{
     0%{
         transform: translate(-50% -50%);
         transform:  scale(1);
@@ -1428,32 +1476,22 @@ footer{
 }
 
 
-/* Gradient Animation */
-@keyframes gradientFlow {
-  0% {background-position: 0% 0%;}
-  50% {background-position: 100% 100%;}
-  100% {background-position: 0% 0%;}
-}
-
-/* Dot Animation */
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 #3b425247; }
-  50% { box-shadow: 0 0 0 6px #b46ead7d; }
-  100% { box-shadow: 0 0 0 0 #b46ead48; }
-}
-
-@keyframes float{
-    0% {transform: translateY(0px);}
-    50% {transform: translateY(-8px);}
-    100% {transform: translateY(0px);}
-}
 
 
 @media only screen and (max-width:1200px){
     .container{
         gap: 1em;
     }
-}    
+}  
+@media only screen and (max-width:1024.8px){
+    .exp-list{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .backskill-card2{
+        margin-top: 1.6%;
+    }
+}  
 @media only screen and (max-width:991px){
     .container{
        gap: 2em;
@@ -1476,6 +1514,16 @@ footer{
     transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
     z-index: 1001;
   }
+
+   .darked .fixed .nav-link{
+      color: white;
+   }
+   .darked .fixed .nav-link:hover{
+      color: white;
+    }
+    .darked .fixed .nav-item:hover::after{
+      background: white !important;
+   }
 
   .custom-menu.active {
     right: 0;
@@ -1577,7 +1625,7 @@ footer{
     .content-title{
         font-size: 46px;
     }
-    .content-about{
+    .content-about, .content-about1, .content-about2, .exp-para, .exp-para1, .exp-para2 {
        font-size: 16px;
     }
     .profile{
@@ -1611,6 +1659,20 @@ footer{
     }
     #skill{
         margin-top: 8%;
+    }
+    .backend-skill-sec.tools{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .front-e-s14{
+        margin-top: 2%;
+    }
+    .exp-list{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .backskill-card1{
+        margin-top: 2%;
     }
     .project3{
         margin-left: 0;
@@ -1738,14 +1800,30 @@ footer{
     .cont-links{
         justify-content: center;
     }
-   .content-about{
+   .content-about, .content-about1, .content-about2, .exp-para, .exp-para1, .exp-para2{
       width: 90%;
       text-align: justify;
       margin: auto;
    }
+   .content-abouts{
+     margin-top: 2%;
+   }
    .contain-row {
       position: relative;
    }
+   .exp-list{
+     margin: 2em 0;
+     gap: 1.4em;
+   }
+    .backskill-card1 {
+        margin-top: 0;
+    }
+    .backskill-card2{
+        margin-top: 0;
+    }
+    .skill-card h6, .backskill-card h6{
+        font-size: 14px;
+    }
    .intro{
     display: flex;
     flex-wrap: wrap-reverse;
@@ -1812,7 +1890,7 @@ footer{
         margin-left: 0;
         padding-left: 0.5rem !important;
     }
-    .edu-txt, .front-end, .back-title, .database, .tool-end, .Project-text, .contact-text{
+    .edu-txt, .front-end, .back-title, .database, .tool-end, .Project-text, .contact-text, .exp-txt1{
         font-size: 22px;
     }
     .fa-user-graduate, .fa-award{
@@ -1821,12 +1899,12 @@ footer{
     .my-edu, .myproject{
         padding: 0 1.6em;
     }
-    .skill-txt{
+    .skill-txt, .exp-txt{
         font-size: 28px;
     }
     .backend-skill-sec{
         flex-wrap: wrap;
-        gap: 2em;
+        gap: 1.4em;
     }
     .about-project{
         flex-wrap: wrap;
