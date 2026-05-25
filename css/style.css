@@ -516,7 +516,6 @@ body{
 }
 .edu-txt{
     display: inline-block;
-    cursor: pointer;
     position: relative;
     letter-spacing: 0.1em;
     font-size: 30px;
@@ -670,7 +669,6 @@ body{
 }
 .skill-txt, .exp-txt{
     display:inline-block;
-    cursor: pointer;
     position: relative;
     letter-spacing: 0.1em;
     font-size: 38px;
@@ -697,7 +695,6 @@ body{
 }
 .front-end, .exp-txt1{
     display: inline-block;
-    cursor: pointer;
     position: relative;
     letter-spacing: 0.1em;
     font-size: 26px;
@@ -847,7 +844,6 @@ body{
 .back-title{
    display: inline-block;
     position: relative;
-    cursor: pointer;
     letter-spacing: 0.1em;
     font-size: 26px;
     font-family: "sora",sans-serif;
@@ -915,7 +911,6 @@ body{
 .database{
     display: inline-block;
     position: relative;
-    cursor: pointer;
     letter-spacing: 0.1em;
     font-size: 26px;
     font-family: "sora",sans-serif;
@@ -950,7 +945,6 @@ body{
 .tool-end{
     display: inline-block;
     position: relative;
-    cursor: pointer;
     letter-spacing: 0.1em;
     font-size: 26px;
     font-family: "sora",sans-serif;
@@ -1027,7 +1021,6 @@ body{
 }
 .Project-text{
   display: inline-block;
-  cursor: pointer;
   position: relative;
   font-size: 30px;
   font-family: "sora",sans-serif;
@@ -1205,7 +1198,6 @@ body{
     font-family: "sora",sans-serif;
     font-weight: 700;
     color: rgb(7, 26, 42); 
-    cursor: pointer;
 }
 .project-t1::after{
     position: absolute;
@@ -1285,7 +1277,6 @@ body{
 }
 .contact-title{
     display: inline;
-    cursor: pointer;
 }
 .contact-text{
     display: inline-block;
@@ -1436,33 +1427,6 @@ footer{
     box-shadow: 2px 2px 2px black;
 }
 
-@keyframes pulse1{
-    0%{
-        transform: translate(-50% -50%);
-        transform:  scale(1);
-    }
-    50%{
-        transform: translate(-50% -50%);
-        transform: scale(1.04);
-    }
-    100%{
-        transform: translate(-50% -50%);
-        transform: scale(1);
-    }
-}
-
-@keyframes stroke{
-    0%{
-        stroke-dashoffset: 26%;
-        stroke-dasharray: 0 50%;
-        stroke-width: 1;
-    }
-    100%{
-        stroke-dashoffset: 100%;
-        stroke-dasharray: 100% 0;
-        stroke-width: 1; 
-    }
-}
 
 @keyframes sticky {
     0% {
